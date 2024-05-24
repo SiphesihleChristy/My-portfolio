@@ -14,7 +14,7 @@ body :before {
     bottom:0;
     z-index: -1;
     display:block;
-    background-image:linear-gradient(rgba(0,0,0,0.80), rgba(0,0,0,0.80)), url(pexels-sohi-807598.jpg);
+    background-image:linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.65)), url(pexels-sohi-807598.jpg);
     background-size:cover;
 
 }
@@ -61,9 +61,10 @@ body :before {
 }
 .navbar ul li:hover::after{
     width:100%;
+
 }
 
-.wits-content {
+.webpg1 {
     content:'';
     position:relative;
     left:0;
@@ -71,67 +72,7 @@ body :before {
     right:0;
     bottom:0;
     color:white;
-
-}
-
-.grad-pic {
-    width:500px;
-    height:500px;
-    float:left;
-    border-radius:50px;
-    border: 2px solid green;
-}
-
-.wits-content h1 {
     font-size:30px;
-}
-
-.wits-content h2 {
-    font-size:25px;
-}
-
-.wits-content p {
-    font-size:18px;
-}
-
-
-.g-code-content {
-    content:'';
-    position:relative;
-    left:0;
-    top:0;
-    right:0;
-    bottom:0;
-    color:white;
-
-}
-
-.g-code-image {
-    width:600px;
-    height:400px;
-    float:left;
-    border-radius:50px;
-    border: 2px solid green;
-
-}
-
-.g-code-content h1 {
-    font-size:30px;
-}
-
-.g-code-content h2 {
-    font-size:25px;
-}
-
-.g-code-content p {
-    font-size:18px;
-}
-
-
-
-.my-text {
-    color:white;
-    
 }
 
 button {
