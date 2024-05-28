@@ -109,3 +109,7 @@ button:hover span {
 button:hover {
     border:none;
 }
+
+.coram-pic {
+    width:750px;
+}

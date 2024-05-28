@@ -7,12 +7,13 @@
 
 body :before {
     content:'';
-    position:fixed;
+    position:fixed; /*ensures that the body of the page is positioned relative to the viewport */
     left:0;
     top:0;
     right:0;
     bottom:0;
-    z-index: -1;
+    z-index: -1; /*I have a background image within my body element,
+    so it having a z-index of -1 means that it will be behind the text and content that I'll put on my page.*/
     display:block;
     background-image:linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.65)), url(pexels-sohi-807598.jpg);
     background-size:cover;
@@ -22,8 +23,8 @@ body :before {
 
 .navbar {
     width:85%;
-    margin:auto;
-    padding: 35px 0; /*top & bottom padding is set to 45px and right & left padding is set to 0px. */
+    margin:auto; /*centers the navbar element horizontally with its parent - the body*/
+    padding: 35px 0; /*top & bottom padding is set to 35px and right & left padding is set to 0px. */
     display:flex;
     align-items: center;
     justify-content: space-between;
@@ -87,9 +88,11 @@ body :before {
     width:0%;
     background:green;
     position:absolute;
-    left:0;
+    left:0; /*my line will transition from left to right*/
     bottom:-10px;
-    transition:0.5s;
+    transition:0.5s; /*when I hover over one of the elements in the navbar,
+    the line will move from left to right - width of 0 too 100% in 0.5s.
+    After (::after) it will go back from 100% to 0 width within 0.5s*/
 }
 .navbar ul li:hover::after{
     width:100%;
